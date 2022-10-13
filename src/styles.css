@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "MyFont";
+
+  src: url("./InterTight-VariableFont_wght.woff") format("woff2");
+
+  font-weight: 600;
+
+  font-style: normal;
+}
+
+* {
+  font-family: "MyFont";
+}
+
+.hello {
+  background-color: coral;
+}
