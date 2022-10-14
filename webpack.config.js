@@ -5,8 +5,9 @@ module.exports = {
   mode: "development",
   entry: {
     index: "./src/index.js",
-    print: "./src/print.js",
     navbar: "./src/navbar.js",
+    footer: "./src/footer.js",
+    listeners: "./src/addEventListeners.js",
   },
   plugins: [
     new HtmlWebpackPlugin({

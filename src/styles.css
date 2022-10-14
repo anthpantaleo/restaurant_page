@@ -60,5 +60,23 @@
 
 .menubutton:hover {
   background-color: #0a090f;
-  box-shadow: #80c08e 4px 4px;
+  box-shadow: #80c08e 4px 3px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--light-color);
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  padding: 5px;
+  align-items: center;
+}
+
+.footercontent {
+  display: flex;
+  color: var(--title-color);
+  align-items: center;
+  gap: 10px;
 }

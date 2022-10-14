@@ -28,21 +28,23 @@ function navbar() {
   // Create Home Button
   const homeButton = document.createElement("button");
   homeButton.classList.add("menubutton");
+  homeButton.setAttribute("id", "homeButton");
   homeButton.innerText = "Home";
   secondNavRow.appendChild(homeButton);
   // Create Menu Button
   const menuButton = document.createElement("button");
   menuButton.classList.add("menubutton");
+  menuButton.setAttribute("id", "menuButton");
   menuButton.innerText = "Menu";
   secondNavRow.appendChild(menuButton);
   // Create Contact Button
   const contactButton = document.createElement("button");
   contactButton.classList.add("menubutton");
+  contactButton.setAttribute("id", "contactButton");
   contactButton.innerText = "Contact";
   secondNavRow.appendChild(contactButton);
 
   navBar.appendChild(secondNavRow);
-
   return navBar;
 }
 
