@@ -19,25 +19,14 @@ eval("/* module decorator */ module = __webpack_require__.nmd(module);\nvar __WE
 
 /***/ }),
 
-/***/ "./src/navbar.js":
-/*!***********************!*\
-  !*** ./src/navbar.js ***!
-  \***********************/
+/***/ "./src/addEventListeners.js":
+/*!**********************************!*\
+  !*** ./src/addEventListeners.js ***!
+  \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"navbar\": () => (/* binding */ navbar)\n/* harmony export */ });\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _favicon_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./favicon.png */ \"./src/favicon.png\");\n\n\n\nfunction navbar() {\n  // Initiate Nav Bar Div\n  const navBar = document.createElement(\"div\");\n  navBar.classList.add(\"nav\");\n  // Add First Row\n  const navRow = document.createElement(\"div\");\n  navRow.classList.add(\"navtoprow\");\n  navBar.appendChild(navRow);\n  // Add First Image\n  const leftImage = new Image();\n  leftImage.src = _favicon_png__WEBPACK_IMPORTED_MODULE_1__;\n  navRow.appendChild(leftImage);\n  // Add Title\n  const restTitle = document.createElement(\"div\");\n  restTitle.textContent = \"STASH\";\n  navRow.appendChild(restTitle);\n  // Add Second Image\n  const rightImage = new Image();\n  rightImage.src = _favicon_png__WEBPACK_IMPORTED_MODULE_1__;\n  navRow.appendChild(rightImage);\n  // Add Nav Buttons + Second Row\n  // Add Second Row\n  const secondNavRow = document.createElement(\"div\");\n  secondNavRow.classList.add(\"navbottomrow\");\n  // Create Home Button\n  const homeButton = document.createElement(\"button\");\n  homeButton.classList.add(\"menubutton\");\n  homeButton.setAttribute(\"id\", \"homeButton\");\n  homeButton.innerText = \"Home\";\n  secondNavRow.appendChild(homeButton);\n  // Create Menu Button\n  const menuButton = document.createElement(\"button\");\n  menuButton.classList.add(\"menubutton\");\n  menuButton.setAttribute(\"id\", \"menuButton\");\n  menuButton.innerText = \"Menu\";\n  secondNavRow.appendChild(menuButton);\n  // Create Contact Button\n  const contactButton = document.createElement(\"button\");\n  contactButton.classList.add(\"menubutton\");\n  contactButton.setAttribute(\"id\", \"contactButton\");\n  contactButton.innerText = \"Contact\";\n  secondNavRow.appendChild(contactButton);\n\n  navBar.appendChild(secondNavRow);\n  return navBar;\n}\n\n\n\n\n//# sourceURL=webpack://restaurant_page/./src/navbar.js?");
-
-/***/ }),
-
-/***/ "./src/favicon.png":
-/*!*************************!*\
-  !*** ./src/favicon.png ***!
-  \*************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-eval("module.exports = __webpack_require__.p + \"c96088d36c320f6b0973.png\";\n\n//# sourceURL=webpack://restaurant_page/./src/favicon.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"listenToPage\": () => (/* binding */ listenToPage)\n/* harmony export */ });\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n\n\nfunction listenToPage() {}\n\n\n\n\n//# sourceURL=webpack://restaurant_page/./src/addEventListeners.js?");
 
 /***/ })
 
@@ -132,32 +121,12 @@ eval("module.exports = __webpack_require__.p + \"c96088d36c320f6b0973.png\";\n\n
 /******/ 		};
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/publicPath */
-/******/ 	(() => {
-/******/ 		var scriptUrl;
-/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
-/******/ 		var document = __webpack_require__.g.document;
-/******/ 		if (!scriptUrl && document) {
-/******/ 			if (document.currentScript)
-/******/ 				scriptUrl = document.currentScript.src
-/******/ 			if (!scriptUrl) {
-/******/ 				var scripts = document.getElementsByTagName("script");
-/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
-/******/ 			}
-/******/ 		}
-/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
-/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
-/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
-/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
-/******/ 		__webpack_require__.p = scriptUrl;
-/******/ 	})();
-/******/ 	
 /************************************************************************/
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/navbar.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/addEventListeners.js");
 /******/ 	
 /******/ })()
 ;

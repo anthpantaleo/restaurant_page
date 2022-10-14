@@ -19,25 +19,25 @@ eval("/* module decorator */ module = __webpack_require__.nmd(module);\nvar __WE
 
 /***/ }),
 
-/***/ "./src/navbar.js":
+/***/ "./src/footer.js":
 /*!***********************!*\
-  !*** ./src/navbar.js ***!
+  !*** ./src/footer.js ***!
   \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"navbar\": () => (/* binding */ navbar)\n/* harmony export */ });\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _favicon_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./favicon.png */ \"./src/favicon.png\");\n\n\n\nfunction navbar() {\n  // Initiate Nav Bar Div\n  const navBar = document.createElement(\"div\");\n  navBar.classList.add(\"nav\");\n  // Add First Row\n  const navRow = document.createElement(\"div\");\n  navRow.classList.add(\"navtoprow\");\n  navBar.appendChild(navRow);\n  // Add First Image\n  const leftImage = new Image();\n  leftImage.src = _favicon_png__WEBPACK_IMPORTED_MODULE_1__;\n  navRow.appendChild(leftImage);\n  // Add Title\n  const restTitle = document.createElement(\"div\");\n  restTitle.textContent = \"STASH\";\n  navRow.appendChild(restTitle);\n  // Add Second Image\n  const rightImage = new Image();\n  rightImage.src = _favicon_png__WEBPACK_IMPORTED_MODULE_1__;\n  navRow.appendChild(rightImage);\n  // Add Nav Buttons + Second Row\n  // Add Second Row\n  const secondNavRow = document.createElement(\"div\");\n  secondNavRow.classList.add(\"navbottomrow\");\n  // Create Home Button\n  const homeButton = document.createElement(\"button\");\n  homeButton.classList.add(\"menubutton\");\n  homeButton.setAttribute(\"id\", \"homeButton\");\n  homeButton.innerText = \"Home\";\n  secondNavRow.appendChild(homeButton);\n  // Create Menu Button\n  const menuButton = document.createElement(\"button\");\n  menuButton.classList.add(\"menubutton\");\n  menuButton.setAttribute(\"id\", \"menuButton\");\n  menuButton.innerText = \"Menu\";\n  secondNavRow.appendChild(menuButton);\n  // Create Contact Button\n  const contactButton = document.createElement(\"button\");\n  contactButton.classList.add(\"menubutton\");\n  contactButton.setAttribute(\"id\", \"contactButton\");\n  contactButton.innerText = \"Contact\";\n  secondNavRow.appendChild(contactButton);\n\n  navBar.appendChild(secondNavRow);\n  return navBar;\n}\n\n\n\n\n//# sourceURL=webpack://restaurant_page/./src/navbar.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"createFooter\": () => (/* binding */ createFooter)\n/* harmony export */ });\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _githublogo_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./githublogo.png */ \"./src/githublogo.png\");\n\n\n\nfunction createFooter() {\n  //Create Footer Div\n  const footerdiv = document.createElement(\"div\");\n  footerdiv.classList.add(\"footer\");\n  // Footer Div Wrapper\n  const footerDivContent = document.createElement(\"div\");\n  footerDivContent.classList.add(\"footercontent\");\n  // Name creation\n  const footerContentA = document.createElement(\"div\");\n  footerContentA.innerText = \"Made with love by anthpantaleo\";\n  //Create Link\n  const footerContentLink = document.createElement(\"a\");\n  footerContentLink.setAttribute(\n    \"href\",\n    \"https://github.com/anthpantaleo/rock_paper_scissors\"\n  );\n  footerContentLink.setAttribute(\"target\", \"_blank\");\n  // create and append image\n  const footerContentImg = new Image();\n  footerContentImg.src = _githublogo_png__WEBPACK_IMPORTED_MODULE_1__;\n  // append to the Footer Content Link\n  footerContentLink.appendChild(footerContentImg);\n  footerDivContent.appendChild(footerContentA);\n  footerDivContent.appendChild(footerContentLink);\n  footerdiv.appendChild(footerDivContent);\n  return footerdiv;\n}\n\n\n\n\n//# sourceURL=webpack://restaurant_page/./src/footer.js?");
 
 /***/ }),
 
-/***/ "./src/favicon.png":
-/*!*************************!*\
-  !*** ./src/favicon.png ***!
-  \*************************/
+/***/ "./src/githublogo.png":
+/*!****************************!*\
+  !*** ./src/githublogo.png ***!
+  \****************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-eval("module.exports = __webpack_require__.p + \"c96088d36c320f6b0973.png\";\n\n//# sourceURL=webpack://restaurant_page/./src/favicon.png?");
+eval("module.exports = __webpack_require__.p + \"0035c307a36c17babb8d.png\";\n\n//# sourceURL=webpack://restaurant_page/./src/githublogo.png?");
 
 /***/ })
 
@@ -157,7 +157,7 @@ eval("module.exports = __webpack_require__.p + \"c96088d36c320f6b0973.png\";\n\n
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/navbar.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/footer.js");
 /******/ 	
 /******/ })()
 ;
