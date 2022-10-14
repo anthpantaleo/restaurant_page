@@ -6,10 +6,11 @@ module.exports = {
   entry: {
     index: "./src/index.js",
     print: "./src/print.js",
+    navbar: "./src/navbar.js",
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Retaurant",
+      title: "Stash Resto",
       favicon: "./src/favicon.png",
     }),
   ],

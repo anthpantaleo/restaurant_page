@@ -1,3 +1,8 @@
+:root {
+  --light-color: #d4dde7;
+  --title-color: #060d1d;
+  --menu-button: #312e81;
+}
 @font-face {
   font-family: "MyFont";
 
@@ -10,4 +15,50 @@
 
 * {
   font-family: "MyFont";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 32px;
+  flex-direction: column;
+  background-color: var(--light-color);
+  color: var(--title-color);
+}
+
+.navtoprow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding-top: 10px;
+}
+
+.navbottomrow {
+  display: flex;
+  padding-bottom: 10px;
+  gap: 50px;
+  margin-top: 10px;
+}
+
+.menubutton {
+  height: 30px;
+  width: 75px;
+  background-color: var(--menu-button);
+  color: white;
+  border-radius: 0;
+  border: 0;
+  font-size: 15px;
+  box-shadow: #11b331 4px -4px;
+  transition: 0.25s;
+}
+
+.menubutton:hover {
+  background-color: #0a090f;
+  box-shadow: #80c08e 4px 4px;
 }
