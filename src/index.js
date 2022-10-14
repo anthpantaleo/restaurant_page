@@ -5,5 +5,5 @@ import { createFooter } from "./footer";
 import { listenToPage } from "./addEventListeners.js";
 
 document.body.appendChild(navbar());
-document.body.appendChild(createFooter());
 listenToPage();
+document.body.appendChild(createFooter());

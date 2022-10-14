@@ -15,7 +15,7 @@ function navbar() {
   navRow.appendChild(leftImage);
   // Add Title
   const restTitle = document.createElement("div");
-  restTitle.textContent = "STASH";
+  restTitle.textContent = "STASH.";
   navRow.appendChild(restTitle);
   // Add Second Image
   const rightImage = new Image();
