@@ -1,4 +1,5 @@
 import _ from "lodash";
+// import { renderHomePage } from "renderHome";
 
 function listenToPage() {
   const homeButton = document.getElementById("homeButton");

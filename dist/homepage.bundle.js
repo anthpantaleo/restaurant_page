@@ -28,6 +28,28 @@ eval("/* module decorator */ module = __webpack_require__.nmd(module);\nvar __WE
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"listenToPage\": () => (/* binding */ listenToPage)\n/* harmony export */ });\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n\n// import { renderHomePage } from \"renderHome\";\n\nfunction listenToPage() {\n  const homeButton = document.getElementById(\"homeButton\");\n  const menuButton = document.getElementById(\"menuButton\");\n  const contactButton = document.getElementById(\"contactButton\");\n  const bodyContent = document.createElement(\"div\");\n  bodyContent.classList.add(\"main\");\n  document.body.appendChild(bodyContent);\n  homeButton.addEventListener(\"click\", function () {\n    console.log(\"home\");\n  });\n  menuButton.addEventListener(\"click\", function () {\n    console.log(\"menu\");\n  });\n  contactButton.addEventListener(\"click\", function () {\n    console.log(\"contact\");\n  });\n  return bodyContent;\n}\n\n\n\n\n//# sourceURL=webpack://restaurant_page/./src/addEventListeners.js?");
 
+/***/ }),
+
+/***/ "./src/renderHome.js":
+/*!***************************!*\
+  !*** ./src/renderHome.js ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"renderHomePage\": () => (/* binding */ renderHomePage)\n/* harmony export */ });\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _fancyresto_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./fancyresto.jpg */ \"./src/fancyresto.jpg\");\n/* harmony import */ var _addEventListeners__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./addEventListeners */ \"./src/addEventListeners.js\");\n\n\n\n\nfunction renderHomePage() {\n  const restoPageImage = new Image();\n  restoPageImage.src = _fancyresto_jpg__WEBPACK_IMPORTED_MODULE_1__;\n}\n\n\n\n\n//# sourceURL=webpack://restaurant_page/./src/renderHome.js?");
+
+/***/ }),
+
+/***/ "./src/fancyresto.jpg":
+/*!****************************!*\
+  !*** ./src/fancyresto.jpg ***!
+  \****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"fa031a66adb02ca10f10.jpg\";\n\n//# sourceURL=webpack://restaurant_page/./src/fancyresto.jpg?");
+
 /***/ })
 
 /******/ 	});
@@ -121,12 +143,32 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
 /************************************************************************/
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/addEventListeners.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/renderHome.js");
 /******/ 	
 /******/ })()
 ;

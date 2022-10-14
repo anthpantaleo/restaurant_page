@@ -8,6 +8,7 @@ module.exports = {
     navbar: "./src/navbar.js",
     footer: "./src/footer.js",
     listeners: "./src/addEventListeners.js",
+    homepage: "./src/renderHome.js",
   },
   plugins: [
     new HtmlWebpackPlugin({

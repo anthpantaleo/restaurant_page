@@ -1,5 +1,5 @@
 :root {
-  --light-color: #d4dde7;
+  --light-color: #b3bec9;
   --title-color: #060d1d;
   --menu-button: #312e81;
 }
@@ -23,6 +23,7 @@
 body {
   display: flex;
   flex-flow: column;
+  background-color: var(--title-color);
 }
 
 .nav {
@@ -87,7 +88,6 @@ body {
 }
 
 .main {
-  background-color: red;
   display: flex;
   align-items: center;
   justify-content: center;
