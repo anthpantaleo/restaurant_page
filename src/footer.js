@@ -15,7 +15,7 @@ function createFooter() {
   const footerContentLink = document.createElement("a");
   footerContentLink.setAttribute(
     "href",
-    "https://github.com/anthpantaleo/rock_paper_scissors"
+    "https://github.com/anthpantaleo/restaurant_page"
   );
   footerContentLink.setAttribute("target", "_blank");
   // create and append image
