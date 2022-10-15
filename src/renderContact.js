@@ -7,7 +7,7 @@ function renderContact() {
   const contactmethod = document.createElement("div");
   contactmethod.classList.add("contactmethod");
   contactmethod.innerText =
-    "for inquiries for our services, please call anthony.";
+    "for inquiries into our services, please call anthony.";
   mainDiv.appendChild(contactmethod);
   return mainDiv;
 }

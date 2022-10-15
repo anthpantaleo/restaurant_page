@@ -106,12 +106,12 @@ body {
 }
 
 .menudescription {
-  width: 30%;
-  padding-top: 40px;
+  width: 300px;
+  padding-top: 20px;
 }
 
 .contactmethod {
-  width: 40%;
+  width: 300px;
   padding-top: 20px;
   text-align: center;
   font-size: 25px;

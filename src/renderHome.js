@@ -4,7 +4,7 @@ import restoPhoto from "./resto2.jpg";
 function renderHomePage() {
   const mainDiv = document.querySelector(".main");
   mainDiv.innerHTML = "";
-  mainDiv.innerText = "welcome";
+  mainDiv.innerText = "welcome.";
   const welcomeMessage = document.createElement("div");
   welcomeMessage.classList.add("welcomemessage");
   welcomeMessage.innerText = "we are open for exclusive patrons only.";
