@@ -1,10 +1,10 @@
 import _ from "lodash";
 import restoPhoto from "./fancyresto.jpg";
-import { listenToPage } from "./addEventListeners";
 
 function renderHomePage() {
-  const restoPageImage = new Image();
-  restoPageImage.src = restoPhoto;
+  const mainDiv = document.querySelector(".main");
+  mainDiv.innerText = "welcome.";
+  return mainDiv;
 }
 
 export { renderHomePage };

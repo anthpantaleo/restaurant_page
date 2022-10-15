@@ -1,6 +1,6 @@
 :root {
-  --light-color: #b3bec9;
-  --title-color: #060d1d;
+  --light-color: #767d83;
+  --title-color: #080808;
   --menu-button: #312e81;
 }
 @font-face {
@@ -34,7 +34,6 @@ body {
   font-size: 32px;
   flex-direction: column;
   background-color: var(--light-color);
-  color: var(--title-color);
 }
 
 .navtoprow {
@@ -82,7 +81,6 @@ body {
 
 .footercontent {
   display: flex;
-  color: var(--title-color);
   align-items: center;
   gap: 10px;
 }
@@ -92,4 +90,11 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding-top: 40px;
+  color: white;
+  font-size: 30px;
+}
+
+.footerimage {
+  height: 32px;
 }

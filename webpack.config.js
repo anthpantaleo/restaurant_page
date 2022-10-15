@@ -4,12 +4,24 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   mode: "development",
   entry: {
-    index: "./src/index.js",
-    navbar: "./src/navbar.js",
-    footer: "./src/footer.js",
-    listeners: "./src/addEventListeners.js",
-    homepage: "./src/renderHome.js",
+    index: {
+      import: "./src/index.js",
+      dependOn: "shared",
+    },
+
+    navbar: { import: "./src/navbar.js", dependOn: "shared" },
+    footer: {
+      import: "./src/footer.js",
+      dependOn: "shared",
+    },
+
+    homepage: {
+      import: "./src/renderHome.js",
+      dependOn: "shared",
+    },
+    shared: "lodash",
   },
+  devtool: "inline-source-map",
   plugins: [
     new HtmlWebpackPlugin({
       title: "Stash Resto",
@@ -20,6 +32,9 @@ module.exports = {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
+  },
+  optimization: {
+    runtimeChunk: "single",
   },
   module: {
     rules: [

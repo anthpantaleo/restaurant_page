@@ -10,7 +10,7 @@ function createFooter() {
   footerDivContent.classList.add("footercontent");
   // Name creation
   const footerContentA = document.createElement("div");
-  footerContentA.innerText = "Made with love by anthpantaleo";
+  footerContentA.innerText = "Made with love by anthpantaleo.";
   //Create Link
   const footerContentLink = document.createElement("a");
   footerContentLink.setAttribute(
@@ -20,6 +20,7 @@ function createFooter() {
   footerContentLink.setAttribute("target", "_blank");
   // create and append image
   const footerContentImg = new Image();
+  footerContentImg.classList.add("footerimage");
   footerContentImg.src = footerImage;
   // append to the Footer Content Link
   footerContentLink.appendChild(footerContentImg);
