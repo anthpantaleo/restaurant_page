@@ -1,7 +1,7 @@
 :root {
   --light-color: #767d83;
   --title-color: #080808;
-  --menu-button: #312e81;
+  --menu-button: #21204b;
 }
 @font-face {
   font-family: "MyFont";
@@ -59,7 +59,7 @@ body {
   border-radius: 0;
   border: 0;
   font-size: 17px;
-  box-shadow: #11b331 4px -4px;
+  box-shadow: #151d16 4px -4px;
   transition: 0.25s ease-out;
 }
 
@@ -93,6 +93,28 @@ body {
   padding-top: 40px;
   color: white;
   font-size: 30px;
+}
+
+.welcomemessage {
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.homeimage {
+  padding-top: 20px;
+  height: 600px;
+}
+
+.menudescription {
+  width: 30%;
+  padding-top: 40px;
+}
+
+.contactmethod {
+  width: 40%;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 25px;
 }
 
 .footerimage {
